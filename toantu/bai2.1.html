@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var inputToan;
+    var inputVatly;
+    var inputHoa;
+    var inputToan= prompt("Nhập điểm toán");
+    var inputVatly= prompt("Nhập điểm vật lí");
+    var inputHoa = prompt("Nhập điểm hoá");
+    var toan = parseInt(inputToan);
+    var vatly = parseInt(inputVatly);
+    var hoa = parseInt(inputHoa);
+    var dtb = (toan + vatly + hoa) / 3;
+    var tong = toan + vatly + hoa;
+
+    document.write("Điểm trung bình là :" + dtb);
+    document.write('<br/>')
+    document.write("Điểm tổng là :" + tong);
+
+</script>
+</body>
+</html>
