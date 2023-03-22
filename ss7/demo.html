@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+html lang="en"
+head
+meta charset="UTF-8"
+titleTitle/title
+/head
+body
+script
+// kiểm tra điểm một học viên
+
+// let point = +prompt("nhập vào môt điểm của học viên");
+// if thiếu ( khuyết)
+// if (point>=60){
+//     alert("Bạn đã pass module");
+// }
+// alert("kết thúc chương trình");
+// if-else (if đủ)
+// if (point>=60){
+//     alert("Bạn đã pass module");
+// }else {
+//     alert("Bạn đã fail module");
+// }
+// alert("kết thúc chương trình")
+// toán tử 3 ngôi => cách viết gọn của if-else (khối lệnh đơn giản)
+// (point >= 60) ? alert("pass") : alert("fail");
+// xếp loại học lực theo điểm
+// if -else if -else => if bậc thang
+//  if (point>=80){
+//      alert("Giỏi");
+//  }else if (point>=70){
+//      alert("Khá");
+//  }else if(point>=50){
+//      alert("Trung bình");
+//  }else {
+//      alert("Yêu sắc yếu");
+//  }
+
+// if lồng nhau
+// tìm số lớn nhất trong 3 số a,b,c
+//  let a =  +prompt("nhập a");
+//  let b =  prompt("nhập b");
+//  let c = + prompt("nhập c");
+//
+//  if (a>=b && a>=c){
+//      alert(a+ " a là số lớn nhất ");
+//  }else {
+//      if (b>=c){
+//         alert(b + " b là số lớn nhất");
+//      }else {
+//          alert(c + " c là số lớn nhất");
+//      }
+//  }
+// tổ hợp phím Ctrl+Alt +L => làm đẹp code (format)
+// tình ngày trong tháng
+
+
+let month = parseInt(prompt("nhập vào một tháng trong năm"));
+switch (month) {
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
+alert("tháng " + month + " có 31 ngày");
+break
+case 2:
+alert("tháng " + month + " có 28 hoặc 29 ngày");
+break;
+case 4:
+case 6:
+case 9:
+case 10:
+alert("tháng " + month + " có 30 ngày");
+break;
+default :
+alert("không phải là tháng trong năm");
+
+}
+
+
+/script
+/body
+/html
+</body>
+</html>

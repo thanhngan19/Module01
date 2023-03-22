@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form>
+        <table>
+            <tr>
+                <th>Chiều cao</th>
+                <th>Cân nặng</th>
+                <th>BMI</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="height"></td>
+                <td><input type="text" id="weight"></td>
+                <td><input type="text" id="bmi"></td>
+            </tr>
+        </table>
+        <br><input type="button" onclick="change()" value="convert">
+        <p id="kq"></p>
+    </form>
+</div>
+<script>
+    function change() {
+        let hieght = document.getElementById("height").value
+        let weight = document.getElementById("weight").value
+        let bmi = weight / (height * height)
+        let bmi = document.getElementById("bmi").value
+        let kq
+        document.getElementById("bmi").innerText
+    }
+    // if (bmi < 18){
+    //     document.write("Underweight");
+    // }
+    // else if (bmi < 25.0){
+    //     document.write("Normal");
+    // }
+    // else if (bmi < 30.0){
+    //     document.write("Overweight");
+    // }
+    //
+    // else{
+    //     document.write("Obese");
+    // }
+    // document.getElementById("kq").innerText = "Result:" + kq;
+</script>
+</body>
+</html>

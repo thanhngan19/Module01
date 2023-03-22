@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    option 1{
+      text-align: center;
+    }
+    option 2{
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+<form action="">
+  <table>
+    <tr>
+      <th>Amount</th>
+      <th>From currency</th>
+      <th>To currency</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="tien"></td>
+      <td><select id="option 1">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+      </select>
+      </td>
+      <td><select id="option 2">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+      </select>
+      </td>
+      <td><input type="button" onclick="change()" value="convert"></td>
+    </tr>
+  </table>
+</form>
+<p id="result"> result</p>
+<script>
+  function change(){
+    let option 1 = document.getElementById("option 1").value;
+    let option 2 = document.getElementById("option 1").value;
+    let amount = document.getElementById("tien").value;
+    let result;
+     if(option 1 == option 2){
+       result = amount;
+    }
+    else if(option 1 != option 2 && option 1 == "VND"){
+      result = amount / 23000 + "$"
+    }else{
+      result = amount * 23000
+    }
+    document.getElementById(result).innerText= "result :" + result
+
+
+
+  }
+
+</script>
+</body>
+</html>
