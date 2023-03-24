@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <td>Cạnh a</td>
+            <td><input type="text" id="canh1"></td>
+        </tr>
+        <tr>
+            <td>Cạnh b</td>
+            <td><input type="text" id="canh2"></td>
+        </tr>
+    </table>
+    <input type="button" onclick="change()" value="Tính diện tích tam giác vuông">
+    <input type="text" id="result">
+</form>
+<script>
+    function change(){
+        let a = document.getElementById("canh1").value;
+        let b = document.getElementById("canh2").value;
+        let c = a * 1 / 2 * b ;
+        document.getElementById("result").value = c;
+    }
+</script>
+</body>
+</html>

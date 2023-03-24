@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td><label for="">Nhập vào cạnh hình vuông</label></td>
+            <td><input type="text" id="canh"></td>
+        </tr>
+        <tr>
+            <td><label for="">Diện tích hình vuông là</label></td>
+            <td><input type="text" id="square"></td>
+        </tr>
+    </table>
+    <input type="button" onclick="change()" value="CALCULATOR">
+</form>
+<script>
+    function change(){
+        let a = document.getElementById("canh").value;
+        let b = a * a;
+        document.getElementById("square").value = b;
+    }
+
+</script>
+</body>
+</html>

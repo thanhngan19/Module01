@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>Điểm 15 phút</td>
+            <td id="1"><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Điểm giữa kì</td>
+            <td id="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Điểm cuối kì</td>
+            <td id="3"><input type="text"></td
+        </tr>
+    </table>
+</form>
+<input type="button" onclick="change()" value="xếp hạng">
+<p id="out"></p>
+<script>
+    function change() {
+
+        let a = document.getElementById("1").value;
+        let b = document.getElementById("2").value;
+        let c = document.getElementById("3").value;
+        let d = (a + b * 2 + c * 3) / 6;
+        if(d>8){
+            document.getElementById("out").innerText="xếp loại giỏi";
+        }else if(d<8 && d>6) {
+            document.getElementById("out").innerText="xếp loại khá";
+        }else{
+            document.getElementById("out").innerText="xếp loại trung bình";
+        }
+    }
+</script>
+</body>
+</html>

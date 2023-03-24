@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<div>
+<form >
 
         <table>
             <tr>
@@ -21,24 +21,23 @@
         </table>
         <br><input type="button" onclick="change()" value="convert">
         <p id="kq"></p>
-</div>
+</form>
 <script>
     function change() {
-        let height = document.getElementById("height").value
-        let weight = document.getElementById("weight").value
-        let bmi = weight / (height * height)
-        document.getElementById("bmi").value = bmi;
-        let kq = document.getElementById("kq").value
+        let height = document.getElementById("height").value;
+        let weight = document.getElementById("weight").value;
+        let bmi = weight / (height * height);
+        document.getElementById("bmi").value= bmi;
+        let kq
         if (bmi < 18) {
-            document.write("Underweight");
+            document.getElementById("kq").innerText = "Underweight"
         } else if (bmi < 25.0) {
-            document.write("Normal");
+            document.getElementById("kq").innerText = "Normal"
         } else if (bmi < 30.0) {
-            document.write("Overweight");
+            document.getElementById("kq").innerText= "Overweight"
         } else {
-            document.write("Obese");
+            document.getElementById("kq").innerText = "Obese"
         }
-        document.getElementById("kq").innerText = "Result:" + kq;
     }
 </script>
 </body>
