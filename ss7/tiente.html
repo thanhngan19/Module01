@@ -12,12 +12,12 @@
     <th>Amount</th>
     <input type="text" name="Amount" id="number">
     <th> From Currency</th>
-    <select id="option 1">
+    <select id="fromCurrency">
         <option value="VND">VND</option>
         <option value="USD">USD</option>
     </select>
     <th> To Currency</th>
-    <select id="option 2">
+    <select id="toCurrency">
         <option value="VND">VND</option>
         <option value="USD">USD</option>
     </select>
@@ -27,14 +27,14 @@
 <p id="Result" style="color: blue;"></p>
 <script>
     function change() {
-        let option1 = document.getElementById("option 1").value;
-        let option2 = document.getElementById("option 2").value;
+        let option1 = document.getElementById("fromCurrency").value;
+        let option2 = document.getElementById("toCurrency").value;
         let Amount = document.getElementById("number").value;
         let Result;
 
-        if (option1 == option2) {
+        if (fromCurrency == toCurrency) {
             Result = Amount
-        } else if (option1 == "VND" && option2 == "USD") {
+        } else if (fromCurrency == "VND" && toCurrency == "USD") {
             Result = Amount * 0.000042 + "$"
         } else {
             Result = Amount * 23548 + "VND"

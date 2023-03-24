@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,27 +17,27 @@
 <p id="Result" style="color: blue"></p>
 <script>
   function Addition(){
-    let num1 = document.getElementById("enter1").value;
-    let num2 = document.getElementById("enter2").value;
-    let Result = parseInt(num1)+ parseInt(num2);
+    let numFirst = document.getElementById("enter1").value;
+    let numSecond = document.getElementById("enter2").value;
+    let Result = parseInt(numFirst)+ parseInt(numSecond);
     document.getElementById("Result").innerHTML = "Result:"+Result;
   }
   function Subtraction(){
-    let num1 = document.getElementById("enter1").value;
-    let num2 = document.getElementById("enter2").value;
-    let Result = num1 - num2;
+    let numFirst = document.getElementById("enter1").value;
+    let numSecond = document.getElementById("enter2").value;
+    let Result = numFirst - numSecond;
     document.getElementById("Result").innerHTML = "Result:"+Result;
   }
   function Multiplication(){
-    let num1 = document.getElementById("enter1").value;
-    let num2 = document.getElementById("enter2").value;
-    let Result = num1 * num2;
+    let numFirst = document.getElementById("enter1").value;
+    let numSecond = document.getElementById("enter2").value;
+    let Result = numFirst * numSecond;
     document.getElementById("Result").innerHTML = "Result:"+Result;
   }
   function Division(){
-    let num1 = document.getElementById("enter1").value;
-    let num2 = document.getElementById("enter2").value;
-    let Result = num1 / num2;
+    let numFirst = document.getElementById("enter1").value;
+    let numSecond = document.getElementById("enter2").value;
+    let Result = numFirst / numSecond;
     document.getElementById("Result").innerHTML = "Result:"+Result;
   }
 </script>

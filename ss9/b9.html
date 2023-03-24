@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <td>Nhập vào cạnh a</td>
+            <td><input type="text" id="canh1"></td>
+        </tr>
+        <tr>
+            <td>Nhập vào cạnh b</td>
+            <td><input type="text" id="canh2"></td>
+        </tr>
+        <tr>
+            <td>Nhập vào cạnh c</td>
+            <td><input type="text" id="canh3"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" onclick="change()" value="TEXT"></td>
+            <td><input type="text" id="result"></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function change() {
+        let a = document.getElementById("canh1").value;
+        let b = document.getElementById("canh2").value;
+        let c = document.getElementById("canh3").value;
+        if (a > 0) {
+            if (b > 0) {
+                if (c > 0) {
+                    if (a + b > c) {
+                        if (a + c > b) {
+                            if (b + c > a) {
+                                document.getElementById("result").value="3 cạnh tam giác";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
