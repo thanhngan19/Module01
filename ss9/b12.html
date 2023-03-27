@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi ngân hàng</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <td>Số tiền ban đầu</td>
+            <td><input type="text" id="money"></td>
+        </tr>
+        <tr>
+            <td>Số tháng cho vay</td>
+            <td><input type="text" id="month"></td>
+        </tr>
+        <tr>
+            <td>Lãi xuất hàng tháng</td>
+            <td><input type="text" id="interest"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="change()" value="TÍNH"></td>
+            <td><input type="text" id="result"></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function change(){
+        let a = document.getElementById("money").value;
+        let b = document.getElementById("month").value;
+        if( b =  4){
+            document.getElementById("interest").value= 10%;
+            document.getElementById("result").value=
+        }else if(b = 6 ){
+            document.getElementById("interest").value= 15%;
+        }else if(b = 12){
+            document.getElementById("interest").value= 20%;
+        }
+
+
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <td>Nhập vào số KWH điện</td>
+            <td><input type="text" id="kW"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="change()" value="Giá điện là :"></td>
+            <td><input type="text" id="result"></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function change(){
+        let a = document.getElementById("kW").value;
+        if(a < 100){
+            document.getElementById("result").value= a * 2000;
+        }else if(a >100 && a < 150){
+            document.getElementById("result").value= 100 * 2000 + (a - 100) * 2500;
+        }else if(a > 150 && a < 200 ){
+            document.getElementById("result").value= 100 * 2000 + 50 * 2500 + (a-150) * 3000;
+        }
+    }
+</script>
+</body>
+</html>

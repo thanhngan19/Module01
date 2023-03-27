@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập cá nhân</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <td>Tiền công</td>
+            <td><input type="text" id="tienCong"></td>
+        </tr>
+        <tr>
+            <td>Tiền lương</td>
+            <td><input type="text" id="tienLuong"></td>
+        </tr>
+        <tr>
+            <td>Khoản thu khác</td>
+            <td><input type="text" id="tienKhac"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="change()" value="CALCULATOR"></td>
+            <td><input type="text" id="result"></td>
+        </tr>
+    </table>
+</form>
+<script>
+    let a = document.getElementById("tienCong").value;
+    let b = document.getElementById("tienLuong").value;
+    let c = document.getElementById("tienKhac").value;
+    let d = 20/100 * (a+b+c);
+    document.getElementById("result").value = d;
+</script>
+</body>
+</html>
