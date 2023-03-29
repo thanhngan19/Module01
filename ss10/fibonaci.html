@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonanci</title>
+</head>
+<body>
+<script>
+    let i, next;
+    let first=0;
+    let second=1;
+    for ( i = 0 ; i < 1477; i++ )
+    {
+        if ( i <= 1 )
+            next = i;
+        else
+        {
+            next = first + second;
+            first = second;
+            second = next;
+            document.write( next + "<br>");
+        }
+    }
+</script>
+</body>
+</html>

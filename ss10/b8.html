@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<input type="button" onclick="change()" value="PLAY">
+<script>
+    function change() {
+        let n = prompt("nhập vào số đầu tiên trong khoảng");
+        let m = prompt("Nhập vào số cuối trong khoảng");
+        alert("khoảng bạn vừa nhập là" + n + "" + "và" + "" + m);
+        let a = parseInt(Math.random() * (m - n + 1));
+        let y = prompt(" nhập vào số dự đoán");
+        while (a != y) {
+            y = prompt("Nhập lại ");
+            if (a == y) {
+                alert("Congrrs!!!");
+                break;
+            }
+            if (y == n && y == m) {
+                y = prompt("Nhập lại ");
+
+            }
+        }
+    }
+</script>
+</body>
+</html>
