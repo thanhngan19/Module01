@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<table>
+    <tr>
+        <td><label for="ENG">English : </label><input type="text" id="ENG"></td>
+        <td><label for="VIE">Vietnamese : </label><input type="text" id="VIE"></td>
+</tr>
+    <tr>
+        <td>
+            <button type="button" onclick="change()">TRANSLATE</button>
+        </td>
+    </tr>
+    <script>
+        function change(){
+            let Eng = ["cat", "mouse", "hello"];
+            let Vie = ["mèo", "chuột", "chào"];
+            let result = document.getElementById("ENG").value;
+            if(Eng.indexOf(result) !== -1) {
+
+                 document.getElementById("VIE").value = (Vie[Eng.indexOf(result)]);
+            }else{
+                document.getElementById("VIE").value = "Không tìm thây từ";
+            }
+        }
+    </script>
+</table>
+</body>
+</html>

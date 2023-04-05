@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển Tiếng Anh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><label for="eng"></label><input type="text" id="eng"></td>
+        <td><input type="button" onclick="change()" value="Translate"></td>
+    </tr>
+    <tr>
+        <td><label for="trans"></label><input type="text" id="trans"></td>
+    </tr>
+</table>
+<script>
+    function change(){
+        let Eng = [eye, cat, apple, strawberry]
+        let Vie = [mat, meo, tao, dau];
+        let result = document.getElementById("eng").value;
+       // result.toString();
+       // result = [];
+         for(let i =0; i < Eng.length; i++){
+             if(Eng.indexOf(result) !==-1){
+                 let result = Eng.indexOf(result);
+               document.getElementById("trans").innerHTML = Vie[result];
+           }
+        }
+    }
+
+</script>
+</body>
+</html>

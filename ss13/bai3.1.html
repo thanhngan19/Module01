@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let n = [2, 10,26, 18, 19, 20, 1, 100]
+   let max = n[0];
+   let sum = 0
+   let dtb;
+   for(let i =0; i< n.length; i++){
+       if(n[i] > max){
+           max = n[i]
+       }
+   }
+   alert(max);
+   for(let i=0; i< n.length; i++){
+       sum += n[i];
+   }
+   dtb = sum / n.length;
+   alert(dtb);
+
+
+</script>
+</body>
+</html>
