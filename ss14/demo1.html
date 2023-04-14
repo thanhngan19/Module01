@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function change2(arr) {
+    //     arr[0]=100;
+    //     console.log("mảng trong hàm "+ arr);
+    // }
+    // let mang =[1,2];
+    // console.log("mảng trước khi gọi hàm "+ mang);
+    // change2(mang);
+    // console.log("mảng sau khi gọi hàm "+ mang);
+
+
+        function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+        result = "Excellent. We'll play a nice game of chess.";
+    } else {
+        result = "Maybe later then.";
+    }
+        return result;
+    }
+
+        let confirmAnswer = confirm("Shall we play a game?");
+        let theAnswer = processConfirm(confirmAnswer);
+        alert(theAnswer);
+
+</script>
+</body>
+</html>

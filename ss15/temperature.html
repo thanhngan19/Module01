@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển nhệt độ</title>
+</head>
+<body>
+<p id="out1"></p>
+<p id="out2"></p>
+
+
+<p></p>
+</body>
+<script>
+    class Temperature{
+        constructor(C) {
+            this.C = C;
+        }
+        TransF(){
+            return "Độ C sang độ F là : "+ (this.C * 1.8) +32 + "F";
+        }
+        TransK(){
+            return "Độ C sang đọ Kelvin là :" + this.C + 273.15+ "K";
+        }
+    }
+    let a = new Temperature(25);
+    document.getElementById("out1").innerHTML= a.TransF();
+    document.getElementById("out2").innerHTML= a.TransK();
+</script>
+</html>

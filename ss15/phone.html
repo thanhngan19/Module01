@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas1" width="250px" height="400px" style="border:1px solid #d3d3d3;" style="text-align: left"></canvas>
+<canvas id="myCanvas2" width="250px" height="400px" style="border:1px solid #d3d3d3;" style="text-align: center"></canvas>
+</body>
+<script>
+    class Nokia{
+        constructor(x) {
+         this.x = x;
+        }
+        CreateRectangle() {
+            var c = document.getElementById("myCanvas1");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#00FFFF";
+            ctx.fillRect(0, 0, 250, 100);
+        }
+    }
+    let a= new Nokia(2);
+     CreateRectangle();
+</script>
+</html>

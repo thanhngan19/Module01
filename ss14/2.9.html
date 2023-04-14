@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let a = 'la vien rose';
+    let c = Array.from(a);
+    let b = prompt("Nhập vào kí tự cần kiểm tra ");
+    function check(c,b) {
+        for(let i=0; i<=c.length-1; i++){
+            if( c[i] === b){
+                count ++;
+            }
+        }
+        // alert(count);
+        if(count === 0){
+            alert("-1");
+        }else{
+            alert(count);
+        }
+    }
+    check(c,b);
+
+
+
+
+
+
+</script>
+</body>
+</html>

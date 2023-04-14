@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1.5</title>
+</head>
+<body>
+<script>
+    let n = prompt("NHập vào một chuỗi");
+    let ngoiSao = ["Polaris", "Aldebaran"," Deneb", "Vega", "Altair","Dubhe","Regulus"];
+    let chomSao = ["Ursa Minor","Tarurus","Cygnus"," Lyra","Aquila"," Ursa Major"," Leo"];
+    function check(txt){
+        for (let i =0; i<= ngoiSao.length-1; i++){
+            if(ngoiSao.indexOf(txt) !== -1){
+                document.write(chomSao[ngoiSao.indexOf(txt)]);
+            }else{
+                alert("Không tìm thấy từ")
+            }
+        }
+    }
+    check(n)
+
+</script>
+</body>
+</html>

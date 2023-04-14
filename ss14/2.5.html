@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá trị nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function check(n,m,q){
+        if(m<n && m<q){
+            alert("số nhỏ nhất là :" +m);
+        }else if(n <m && n<q){
+            alert("số nhỏ nhất là :" +n);
+        }else{
+            alert("số nhỏ nhất là :" +q);
+        }
+    }
+    let First =+prompt ("Nhập vào sô thứ nhất" );
+    let Second =+prompt ("Nhập vào sô thứ nhất" );
+    let Third =+prompt ("Nhập vào sô thứ nhất" );
+    check(First,Second,Third);
+
+</script>
+</body>
+</html>

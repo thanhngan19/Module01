@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function Student (id, name, school){
+    //     this.id = id;
+    //     this.name= name;
+    //     this. school= school;
+    //     this.getInfor = function(){
+    //         return "id =" + this.id + "name =" +this.name+ "school= "+ this.school;
+    //     }
+    // }
+    // var student = new Student("1","Nguyễn Văn A","Lê lai");
+    // alert(student.getInfor());
+    // let person = {
+    //     name: ['Bob', 'Smith'],
+    //     age: 32,
+    //     gender: 'male',
+    //     interests: ['music', 'skiing'],
+    //     bio: function() {
+    //         alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+    //     },
+    //     greeting: function() {
+    //         alert('Hi! I\'m ' + this.name[0] + '.');
+    //     }
+    // };
+    // let myDataName = 'height';
+    // let myDataValue = '1.75m';
+    // person[myDataName] = myDataValue;
+    // alert(person.height);
+    let Mydate = function(day, month, year){
+        this.day = day;
+        this.month = month;
+        this.year= year;
+        this.getDay = function(){
+            return this.day;
+        }
+        this.getMonth = function(){
+            return this.month;
+        }
+        this.getYear = function(){
+            return this.year;
+        }
+        this.setDay = function (){
+            this.day = day;
+        }
+        this.setMonth = function(){
+            this.month= month;
+        }
+        this.setYear = function(){
+            this.year = year;
+        }
+
+    };
+    let date = new Mydate(1, 12, 2023);
+    alert(date.getYear())
+</script>
+</body>
+</html>

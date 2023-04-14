@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Mô Tả Hình Chữ Nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500px" height="250px" style="border:1px solid #d3d3d3;"></canvas>
+<p id="tinh"></p>
+<p id="out"></p>
+</body>
+<script>
+    // function Rectangle(a){
+    //     this.x =x;
+    //     this.y = y;
+    //     this.DT = function(){
+    //        return "diên tích là :" + this.x * this.y;
+    //     }
+    //     this.CV = function(){
+    //         return "chu vi là :"+ (this.x + this.y)/2;
+    //     }
+    //     function createRectangle(){
+    //         var c = document.getElementById("myCanvas");
+    //         var ctx = c.getContext("2d");
+    //         ctx.fillStyle = "#FF0000";
+    //         ctx.fillRect(0,0,this.y, this.x);
+    //     }
+    // }
+    // let hcn = new
+    // createRectangle();
+    class Rectangle {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        tinhDientich() {
+            return "diện tích hình chữ nhật là :" + this.x * this.y;
+        }
+
+        tinhChuvi() {
+            return "chu vi hình chữ nhật là:" + (this.x + this.y) / 2;
+        }
+        CreateRectangle(x, y) {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#00FFFF";
+            ctx.fillRect(0, 0, this.y, this,x);
+        }
+    }
+    let a = new Rectangle(2,10);
+   document.getElementById("tinh").innerHTML= a.tinhChuvi();
+   document.getElementById("out").innerHTML= a.tinhDientich();
+   a.CreateRectangle();
+
+</script>
+</html>
